@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="Docs/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tache 9</title>
+</head>
+<body>
+
+ <!-- navbar -->
+ <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+    <div class = "container">
+        <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" style="position:relative; left: -50px;" href = "index.html">
+             <img src = "images/shopp.png" alt = "site icon" style="width: 40px;"> 
+            <!-- <i class="fa-solid fa-shop"></i> -->
+            <span class = "text-uppercase fw-lighter ms-2">Eden's House</span>
+        </a>
+
+        <div class = "order-lg-2 nav-btns" style="position: relative; top: -8px;left: 50px;">
+            <button type = "button" class = "btn position-relative">
+                <i class = "fa fa-shopping-cart"></i>
+            </button>
+            <button type = "button" class = "btn position-relative">
+                <i class = "fa fa-heart"></i>
+            </button>
+            <button type = "button" class = "btn position-relative">
+                <i class = "fa fa-search"></i>
+            </button>
+        </div>
+
+        <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+            <span class = "navbar-toggler-icon"></span>
+        </button>
+
+        <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+            <ul class = "navbar-nav mx-auto text-center">
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "index.html">home</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "index.html">collection</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "index.html">specials</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "index.html">blogs</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "index.html">about us</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="d-flex gap-2 bout">
+                  <a href="connexion.html"><button class="btn btn-success bt1">Se connecter</button></a>
+                  <a href="inscription.html"><button class="btn btn-primary bt2">S'inscrire</button></a>
+                </li>
+              </ul>
+        </div>
+    </div>
+</nav>
+<!-- end of navbar -->
+
+   <!-- FORMULAIRE INSCRIPTION -->
+   <section id="inscription" class="pt-5 pb-5" style="margin-top: 100px;">
+    <div class="container pt-5">
+        <div class="row">
+          <div class="col-md-8"> 
+            <form class="row g-3 needs-validation" novalidate>
+                <I><h3 class="text-center"> INSCRIPTION !</h3></I>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">Nom</label>
+                  <input type="text" class="form-control" id="validationCustom01" placeholder="Votre nom" required>
+                  <div class="valid-feedback">
+                    Merci!!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Prenom</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="Votre prenom" required>
+                  <div class="valid-feedback">
+                    Merci!!
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustomUsername" class="form-label">Votre Mail</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" placeholder="Username or mail" required>
+                    <div class="invalid-feedback">
+                      Veuillez choisir un nom d'utilisateur.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom03" class="form-label">Ville</label>
+                  <input type="text" class="form-control" id="validationCustom03" placeholder="Ville de residence" required>
+                  <div class="invalid-feedback">
+                    veuillez fournir une ville valide.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom04" class="form-label">Région</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Choisir...</option>
+                    <option>Dakar</option>
+                    <option>Ziguinchor</option>
+                    <option>Diourbel</option>
+                    <option>Saint-Louis</option>
+                    <option>Tambacounda</option>
+                    <option>Kaolack</option>
+                    <option>Thiès</option>
+                    <option>Louga</option>
+                    <option>Fatick</option>
+                    <option>Kolda</option>
+                    <option>Matam</option>
+                    <option>Kaffrine</option>
+                    <option>Kédougou</option>
+                    <option>Sédhiou</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Veuillez fournir une région valide.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label">Choisir mot de passe</label>
+                  <input type="password" class="form-control" id="validationCustom05" placeholder="password" required>
+                  <div class="invalid-feedback">
+                    Mot de passe invalide.
+                  </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom03" class="form-label">Numero Telephone</label>
+                    <input type="number" class="form-control" id="validationCustom03" placeholder="Telephone" required>
+                    <div class="invalid-feedback">
+                      veuillez fournir un numero valide.
+                    </div>
+                  </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Accepter les termes et conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">S'inscrire</button>
+                </div>
+              </form>
+              <div class="row mt-3">
+                <p>Avez-vous déjà un compte ? </p>
+                <a href="connexion.html"><button class="btn btn-success">Se connecter</button></a>
+              </div>
+        </div>
+        
+        </div>
+    </div>
+    
+</section>
+
+
+
+<!-- footer -->
+ <footer class = "bg-dark py-5">
+    <div class = "container">
+        <div class = "row text-white g-4">
+            <div class = "col-md-6 col-lg-3">
+                <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">Eden's House by Toba</a>
+                <p class = "text-white text-muted mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia quisquam veniam odit cupiditate, ullam aut voluptas velit dolor ipsam?</p>
+            </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "fw-light">Links</h5>
+                <ul class = "list-unstyled">
+                    <li class = "my-3">
+                        <a href = "#" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i> Home
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "#" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i> Collection
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "#" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i> Blogs
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "#" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i> About Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "fw-light mb-3">Contact Us</h5>
+                <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class = "me-3">
+                        <i class = "fas fa-map-marked-alt"></i>
+                    </span>
+                    <span class = "fw-light">
+                        SENEGAL , DAKAR 
+                    </span>
+                </div>
+                <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class = "me-3">
+                        <i class = "fas fa-envelope"></i>
+                    </span>
+                    <span class = "fw-light">
+                        edenshouse@gmail.com
+                    </span>
+                </div>
+                <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class = "me-3">
+                        <i class = "fas fa-phone-alt"></i>
+                    </span>
+                    <span class = "fw-light">
+                        33 865  23 00
+                    </span>
+                </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "fw-light mb-3">Follow Us</h5>
+                <div>
+                    <ul class = "list-unstyled d-flex">
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> 
+<!-- end of footer -->
+             <!-- lienn javascript -->
+    <script src="Docs/js/bootstrap.bundle.min.js"></script>
+ </body>
+ </html>

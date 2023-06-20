@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="Docs/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tache 9</title>
+</head>
+<body>
+
+ <!-- navbar -->
+ <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+    <div class = "container">
+        <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" style="position:relative; left: -50px;" href = "index.html">
+             <img src = "images/shopp.png" alt = "site icon" style="width: 40px;"> 
+            <!-- <i class="fa-solid fa-shop"></i> -->
+            <span class = "text-uppercase fw-lighter ms-2">Eden's House</span>
+        </a>
+
+        <div class = "order-lg-2 nav-btns" style="position: relative; top: -8px;left: 50px;">
+            <button type = "button" class = "btn position-relative">
+                <i class = "fa fa-shopping-cart"></i>
+            </button>
+            <button type = "button" class = "btn position-relative">
+                <i class = "fa fa-heart"></i>
+            </button>
+            <button type = "button" class = "btn position-relative">
+                <i class = "fa fa-search"></i>
+            </button>
+        </div>
+
+        <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+            <span class = "navbar-toggler-icon"></span>
+        </button>
+
+        <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+            <ul class = "navbar-nav mx-auto text-center">
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "index.html">home</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "index.html">collection</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "index.html">specials</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "index.html">blogs</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "index.html">about us</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="d-flex gap-2 bout">
+                  <a href="connexion.html"><button class="btn btn-success bt1">Se connecter</button></a>
+                  <a href="inscription.html"><button class="btn btn-primary bt2">S'inscrire</button></a>
+                </li>
+              </ul>
+        </div>
+    </div>
+</nav>
+<!-- end of navbar -->
+
+<!-- FORMULAIRE CONNEXION -->
+<section id="connexion" class="pt-5 pb-5" style="margin-top: 100px;">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-md-6 num1">
+                <I><h3 class="text-center"> CONNEXION !</h3></I>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="nom@example.com">
+                    <label for="floatingInput">Adresse email ou username</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Mot de passe">
+                    <label for="floatingPassword">Enter votre mot de passe</label>
+                  </div>
+                  <div class="col mt-3">
+                    <button class="btn btn-primary" type="submit">Se connecter</button>
+                  </div>
+
+                  <div class="row mt-3">
+                    <p>Vous n'avez pas de compte ?  </p>
+                    <a href="inscription.html"><button class="btn btn-success">S'inscrire</button></a>
+                  </div>
+            </div>
+            <div class="col-md-6">
+                <img src="images/blog_3.jpg" class="rounded-3 img-fluid mt-3" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+ <footer class = "bg-dark py-5">
+    <div class = "container">
+        <div class = "row text-white g-4">
+            <div class = "col-md-6 col-lg-3">
+                <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">Eden's House by Toba</a>
+                <p class = "text-white text-muted mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia quisquam veniam odit cupiditate, ullam aut voluptas velit dolor ipsam?</p>
+            </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "fw-light">Links</h5>
+                <ul class = "list-unstyled">
+                    <li class = "my-3">
+                        <a href = "#" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i> Home
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "#" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i> Collection
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "#" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i> Blogs
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "#" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i> About Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "fw-light mb-3">Contact Us</h5>
+                <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class = "me-3">
+                        <i class = "fas fa-map-marked-alt"></i>
+                    </span>
+                    <span class = "fw-light">
+                        SENEGAL , DAKAR 
+                    </span>
+                </div>
+                <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class = "me-3">
+                        <i class = "fas fa-envelope"></i>
+                    </span>
+                    <span class = "fw-light">
+                        edenshouse@gmail.com
+                    </span>
+                </div>
+                <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class = "me-3">
+                        <i class = "fas fa-phone-alt"></i>
+                    </span>
+                    <span class = "fw-light">
+                        33 865  23 00
+                    </span>
+                </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "fw-light mb-3">Follow Us</h5>
+                <div>
+                    <ul class = "list-unstyled d-flex">
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end of footer -->
+
+
+             <!-- lienn javascript -->
+    <script src="Docs/js/bootstrap.bundle.min.js"></script>
+ </body>
+ </html>
